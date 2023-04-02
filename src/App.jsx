@@ -4,7 +4,11 @@ import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Account from './pages/Account';
 import Signin from './pages/Signin';
-
+import About from './pages/About';
+import Contact from './pages/Contact';
+// import Middle from './components/middle';
+import Hero from './components/Hero';
+import Analytics from './components/Analytics';
 
 
 
@@ -16,14 +20,18 @@ import Signin from './pages/Signin';
 function App() {
   return (
     <Router>
-    <div className="bg bg-black h-screen">
+    <div className="bg-black h-screen">
       <Navbar />
+      <Hero/>
+      <Analytics/>
       <Routes>
         {/* <Route path="/" element={<Home />}/> */}
         {/* <Route path="/about" element={<About />} /> */}
-        <Route path = "/" element = {<Home/>} />
+        <Route path = "/home" element = {<Home/>} />
         <Route path = "/account" element = {<Account/>} />
         <Route path = "/signin" element = {<Signin/>} />
+        <Route path = "/about" element = {<About/>} />
+        <Route path = "/contact" element = {<Contact/>} />
       </Routes>
     </div>
     </Router>
