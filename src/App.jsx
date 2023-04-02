@@ -9,8 +9,8 @@ import Contact from './pages/Contact';
 // import Middle from './components/middle';
 import Hero from './components/Hero';
 import Analytics from './components/Analytics';
-
-
+import Footer from './components/Footer';
+import Newsletter from './components/Newsletter';
 
 
 
@@ -24,6 +24,8 @@ function App() {
       <Navbar />
       <Hero/>
       <Analytics/>
+      {/* <Newsletter/> */}
+      <Footer/>
       <Routes>
         {/* <Route path="/" element={<Home />}/> */}
         {/* <Route path="/about" element={<About />} /> */}
